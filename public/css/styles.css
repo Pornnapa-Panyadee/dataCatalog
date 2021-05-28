@@ -247,7 +247,7 @@
 
 .horizontal-main-wrapper {
     font-family: "Mitr", sans-serif;
-    min-height: 200vh;
+    min-height: 100%;
 }
 
 .horizontal-main-wrapper .container {
@@ -261,7 +261,7 @@
 }
 
 .horizontal-main-wrapper .main-content-inner {
-    padding: 0 0 50px;
+    padding: 0 0 10px;
 }
 
 .mainheader-area .notification-area {
@@ -270,10 +270,12 @@
 }
 
 .mainheader-area {
-    background: #fff;
+    background: #843df9;
+    color: #ffffff;
     border-bottom: 1px solid #f3f8fb;
-    padding-left: 15px;
-    position: relative;
+    height: 100px;
+    padding: 20px 30px;
+    /* position: relative; */
     z-index: 99;
 }
 
@@ -293,9 +295,9 @@
 .horizontal-menu ul li a {
     display: block;
     font-family: "Mitr", sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
-    padding: 10px 20px;
+    padding: 10px 40px;
     color: #000000;
     text-transform: capitalize;
 }
@@ -353,6 +355,20 @@
 .header-bottom .search-box input {
     max-width: 350px;
     width: 100%;
+}
+.textHeadBorderMiddle {
+    font-family: "Mitr";
+    text-align: center;
+    color: #070747;
+    font-size: 28px;
+    border-bottom: 4px solid #636363;
+    line-height: 0.1em;
+    margin: 20px 0 20px;
+}
+
+.textHeadBorderMiddle > span {
+    background-color: #f5f5f5;
+    padding: 0 10px;
 }
 
 /* mobile menu */
@@ -1197,13 +1213,20 @@ table.dbkit-table tr td {
 .footer-area {
     font-family: "Mitr", sans-serif;
     text-align: center;
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     padding: 23px 0 19px;
-    background: #fff;
+    color:#fff;
+    background: rgb(70, 124, 185);
+
+
 }
 
 .footer-area p {
     font-family: "Mitr", sans-serif;
-    color: #676666;
+    color: #ffffff;
     margin-bottom: 0;
 }
 
@@ -1342,7 +1365,7 @@ table.dbkit-table tr td {
 
 .seofct-icon {
     color: #fff;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
 }
 
@@ -1425,6 +1448,10 @@ table.dbkit-table tr td {
     text-align: center;
     font-size: 12px;
     color: #fff;
+}
+
+.bg0 {
+    background: #cef0ff;
 }
 
 .bg1 {
@@ -1557,20 +1584,20 @@ table.dbkit-table tr td {
 
 .tstu-name {
     font-size: 20px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     letter-spacing: 0;
 }
 
 .profsn {
     display: block;
     font-size: 16px;
-    color: #fff;
+    color: rgb(0, 0, 0);
     letter-spacing: 0.02em;
     margin-bottom: 15px;
 }
 
 .tst-item p {
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .testimonial-carousel .owl-dots {
@@ -1782,6 +1809,7 @@ table.dbkit-table tr td {
 /* additional content */
 
 .alert-heading {
+    font-family: "Mitr", sans-serif;
     margin-bottom: 7px;
 }
 
@@ -2096,6 +2124,8 @@ table tr th {
 
 table tr th,
 table tr td {
+    font-size: 18px;
+    text-align: left;
     border-top: 1px solid rgba(120, 130, 140, 0.13) !important;
 }
 

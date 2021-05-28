@@ -159,6 +159,7 @@ sup {
     top: -0.5em;
 }
 a {
+    font-family: "Mitr", sans-serif;
     color: #007bff;
     text-decoration: none;
     background-color: transparent;

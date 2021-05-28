@@ -33,30 +33,7 @@
     <div class="horizontal-main-wrapper">
        
         <!-- header area start -->
-        <div class="header-area header-bottom">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-9  d-none d-lg-block">
-                        <div class="horizontal-menu">
-                            @include('nav.sidebar')
-                        </div>
-                    </div>
-                    <!-- nav and search button -->
-                    <div class="col-lg-3 clearfix">
-                        <div class="search-box">
-                            <form action="#">
-                                <input type="text" name="search" placeholder="Search..." required>
-                                <i class="ti-search"></i>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- mobile_menu -->
-                    <div class="col-12 d-block d-lg-none">
-                        <div id="mobile_menu"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @include('nav.sidebar1')
         <!-- header area end -->
 
         <!-- page title area end -->
@@ -65,8 +42,8 @@
             <div class="row">
                     <!-- nav tab start -->
                     <div class="col-lg-12 mt-5">
-                        <div class="card">
-                            <div class="card-body">
+                        <div class="card" >
+                            <div class="card-body" style="height:90%;">
                                 <div class="d-md-flex">
                                     <div class="nav flex-column nav-pills mr-4 mb-3 mb-sm-0" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                         <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"> <i class="ti-signal"></i><span> สถานีโทรมาตร/สถานี</span> </a>
@@ -83,7 +60,7 @@
                                                         <div class="card-body">
                                                             <div class="additional-content">
                                                                 <div class="alert alert-primary" role="alert">
-                                                                    <h4 class="alert-heading">ระดับน้ำของสถานีฝาง 2563</h4>
+                                                                    <h4 class="alert-heading"><a href="{{ asset('detail')}}" > ระดับน้ำของสถานีฝาง 2563 </a> </h4>
                                                                     <p>ข้อมูลระดับน้ำ  ระดับน้ำทำเล อัตราการไหล น้ำฝน อุณหภูมิ และความชื้น ของสถานีโทรมาตรที่ติดตั้งในลุ่มน้ำฝาง จำนวน 4 สถานี</p>
                                                                     <hr>
                                                                     <p class="mb-0">ปรับปรุงข้อมูล : มกราคม 2564</p> 
@@ -182,11 +159,7 @@
         </div>
         <!-- main content area end -->
         <!-- footer area start-->
-        <footer>
-            <div class="footer-area">
-                <p> ศูนย์ข้อมูลทรัพยากรน้ำ มหาวิทยาลัยเชียงใหม่</a>.</p>
-            </div>
-        </footer>
+            @include('nav.footer')
         <!-- footer area end-->
     </div>
     <!-- main wrapper start -->

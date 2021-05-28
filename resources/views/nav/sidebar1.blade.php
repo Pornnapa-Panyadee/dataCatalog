@@ -1,17 +1,17 @@
-    <div class="header-area header-bottom">
+<div class="header-area header-bottom">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-9  d-none d-lg-block">
                         <div class="horizontal-menu">
                             <nav>
                                 <ul id="nav_menu">
-                                <li class="active">
+                                <li >
                                         <a href="{{ asset('/')}}">
                                             <i class="ti-home"></i> <br>
                                             <span>หน้าแรก</span>
                                         </a>
                                     </li>
-                                    <li >
+                                    <li class="active">
                                         <a href="{{ asset('/data')}}">
                                             <i class="ti-folder"></i><br>
                                             <span>คลังข้อมูล</span>

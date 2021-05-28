@@ -42,13 +42,14 @@ p img {
 
 a,
 a:visited {
+    font-family: "Mitr", sans-serif;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     outline: 0;
-    font-family: 'Poppins', sans-serif;
+    
 }
 a:hover{
     text-decoration: none;
